@@ -1,0 +1,10 @@
+<div class="container">
+<h2>My Heroes</h2>
+<div class="col-md-3">
+    <div *ngFor="let hero of heroes" class="list-group">
+        <button routerLink="/detail/{{hero.id}}" type="button" class="btn btn-light text-left">
+          {{hero.name}} <span class="badge badge-dark">{{hero.id}}</span>
+        </button>
+      </div>
+</div>
+</div>
